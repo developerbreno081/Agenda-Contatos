@@ -95,12 +95,20 @@ programa
 
 	funcao SobreApp() {
 		
-		escreva("O intuito deste App Console é promover ao usuário uma experiência de realizar as \noperações fundamentais de qualquer aplicação.\n\nSeriam elas:\n\nCriar, Ler, Atualizar e Apagar dados.\n\n\n")
+		escreva("\n")
+		escreva("O intuito deste App Console é promover ao usuário uma experiência de realizar as \noperações fundamentais de qualquer aplicação.\n\nSeriam elas:\n\nCriar, Ler, Atualizar e Apagar dados.\n\n")
+		escreva("\n")
+		u.aguarde(5000)
+		limpa()
+		
+		RetornarMenuP()
+		
 		
 		}
 
   funcao Aguarde(){
-    
+
+    escreva("\n")
     u.aguarde(1000)
     escreva(".")
     u.aguarde(3000)
@@ -112,6 +120,7 @@ programa
     u.aguarde(3000)
     escreva("redirecionando....")
     u.aguarde(2000)
+    limpa()
     
   }
 
@@ -124,7 +133,44 @@ programa
   	escreva("[1] Criar\n")
   	escreva("[2] Ler\n")
   	escreva("[3] Atualizar\n")
-  	escreva("[4] Excluir")
+  	escreva("[4] Excluir")escreva("+-------------+\n")
+  	
+  	}
+
+  funcao RetornarMenuP(){
+  	
+  	escreva("\n")
+  	escreva("+----------------------------------+\n")
+	escreva("|Deseja retornar ao Menu Principal?|\n")
+	escreva("+----------------------------------+")
+	escreva("\n")
+	escreva("\n")
+
+	inteiro OpRetorno
+	escreva("[1] sim\n")
+	escreva("[2] não\n\n")
+
+	escreva(">> ")
+	leia(OpRetorno)
+	limpa()
+	
+	escolha(OpRetorno){
+
+		caso 1:
+		se(OpRetorno == 1) {
+			Aguarde()
+			MenuPrincipal()
+			}
+		pare
+
+		caso 2: 
+		escreva("\n")
+		escreva("Volte sempre! :) ")
+		u.aguarde(2000)
+		limpa()
+		pare
+		
+		}
   	
   	}
 
@@ -147,7 +193,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2425; 
+ * @POSICAO-CURSOR = 2034; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
